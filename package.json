@@ -1,0 +1,47 @@
+{
+  "name": "give-me-answers",
+  "version": "1.0.0",
+  "description": "give-me-answers is a super simple wrapper around the OpenAI SDK that helps you get AI answers fast. It lets you send prompts and get structured, validated responses without all the hassle. Perfect for creating quick scripts that need OpenAI answers.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "give-me-answers",
+    "OpenAI",
+    "AI",
+    "answers",
+    "OpenAI",
+    "SDK",
+    "Zod",
+    "AI",
+    "integration",
+    "prompt",
+    "validation",
+    "schema",
+    "validation",
+    "chatbot",
+    "OpenAI",
+    "wrapper",
+    "easy",
+    "OpenAI",
+    "OpenAI",
+    "responses",
+    "AI",
+    "helper",
+    "get",
+    "answers",
+    "OpenAI",
+    "chat",
+    "quick",
+    "AI",
+    "scripts"
+  ],
+  "author": "Binya",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.63.0",
+    "zod": "^3.23.8"
+  }
+}
