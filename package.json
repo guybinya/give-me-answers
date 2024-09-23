@@ -1,6 +1,6 @@
 {
   "name": "give-me-answers",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "give-me-answers is a super simple wrapper around the OpenAI SDK that helps you get AI answers fast. It lets you send prompts and get structured, validated responses without all the hassle. Perfect for creating quick scripts that need OpenAI answers.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
