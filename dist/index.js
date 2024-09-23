@@ -6,14 +6,12 @@ const zod_1 = require("openai/helpers/zod");
 const openAiRequestWithSchema = async (model, messages, schema) => {
     const client = new openai_1.default();
     const responseFormat = (0, zod_1.zodResponseFormat)(schema, 'schema');
-    console.log('responseFormat', responseFormat);
     try {
         const completion = await client.beta.chat.completions.parse({
             model,
             messages,
             response_format: responseFormat
         });
-        console.log('completion.choices[0].message.content', completion.choices[0].message.content);
         if (completion.choices[0].message.content === null) {
             return null;
         }

@@ -11,14 +11,12 @@ export const openAiRequestWithSchema = async <T>(
 	const client = new OpenAI();
 
 	const responseFormat = zodResponseFormat(schema, 'schema');
-	console.log('responseFormat', responseFormat);
 	try {
 		const completion = await client.beta.chat.completions.parse({
 			model,
 			messages,
 			response_format: responseFormat
 		});
-		console.log('completion.choices[0].message.content', completion.choices[0].message.content);
 		if (completion.choices[0].message.content === null) {
 			return null;
 		}
